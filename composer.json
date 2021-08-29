@@ -1,0 +1,25 @@
+{
+  "name": "baba/sitemap-crawler",
+  "type": "library",
+  "license": "GPL-2.0-only",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Juraj Puchký - BABA Tumise s.r.o.",
+      "email": "info@baba.bj"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BABA\\Utilities\\": "src/"
+    }
+  },
+  "provide": {
+    "baba/sitemap-crawler": "1.0.0"
+  },
+  "require": {
+    "php": ">=7.3",
+    "ext-dom": "*",
+    "ext-libxml": "*"
+  }
+}
