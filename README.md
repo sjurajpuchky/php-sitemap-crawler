@@ -5,8 +5,8 @@ Main purpose of this library is to scrape list of url from sitemap file
 # Install
 
 ```
-git clone https://github.com/sjurajpuchky/find-keyword-golden-ratio-kgr-to-optimize-pages-for-search-engines-helps-you-top10-google-php.git
-cd search-analytics-utilities
+git clone https://github.com/sjurajpuchky/php-sitemap-crawler.git
+cd php-sitemap-crawler
 composer install
 ```
 
