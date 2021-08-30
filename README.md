@@ -16,7 +16,7 @@ Feel free to look into samples folder and checkout
 # Examples
 In folder samples you can find some basic usage of library.
 
-```php samples/crawleit.php <your sitemap.xml ur>```
+```php samples/crawleit.php <your sitemap.xml url>```
 
 # License
 GPL-2.0-only
