@@ -15,7 +15,7 @@ class SitemapCrawler
     {
         libxml_use_internal_errors(true);
         $dom = new \DOMDocument();
-        $dom->load($sitemapUrl);
+        $dom->loadXML(self::getContent($sitemapUrl));
 
         $urls = $dom->getElementsByTagName('url');
         /** @var DOMElement $eurl */
@@ -40,9 +40,21 @@ class SitemapCrawler
     /**
      * @return array
      */
-    public
-    function getUrls()
+    public function getUrls()
     {
         return $this->urls;
+    }
+
+    private static function getContent($url) {
+        $ch = curl_init($url);
+
+        curl_setopt($ch,CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch,CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return $result;
     }
 }
