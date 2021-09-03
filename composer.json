@@ -20,6 +20,7 @@
   "require": {
     "php": ">=7.3",
     "ext-dom": "*",
-    "ext-libxml": "*"
+    "ext-libxml": "*",
+    "ext-curl": "*"
   }
 }
